@@ -154,7 +154,7 @@ nav ul li a:hover::after{
 		transform: translateX(0);
 	}
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1200px){
 
 	nav{
 	display: flex;
@@ -258,7 +258,7 @@ overflow: hidden;
 display: inline-block;
 transition: .5s;
 }
-@media screen and (max-width:1300px){
+@media screen and (max-width:1500px){
 	.card-container{
 	width: 350px;
 	height: 500px;
