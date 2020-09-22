@@ -36,7 +36,7 @@
                 </ul>
             </nav>
         </div>
-<div class="content" style="height:130vh;">
+<div class="content" style="height:100vh;">
         <div class='aboutcontainer' style="margin-top:30px; margin-left:auto; margin-right:auto; text-align:center;background-color:#EA5555; max-width:315px;">
             <button class='about' onclick='admins()'>Admins</button>
             <button class='about' onclick='aboutus()'>About Us</button>
