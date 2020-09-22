@@ -82,7 +82,13 @@
                         echo "<tr style='border-top:1px solid black; border-bottom:1px solid black;'><td style='background-color:#ddd; color:black; text-align:left; padding-left:30px; max-width:300px; overflow-wrap: break-word;'>".$row2['Post_Content']."</td>";
                         $sql3 = "SELECT * from student WHERE Stud_ID = '".$row['Post_Creator']."'";
                         $row4 = mysqli_fetch_assoc($sql3);
-                        echo "<td style='background-color:#ddd; color:black; text-align:center;'><img src='".$row4['area']."' width='200' height='200'><br>".$row2['Post_Creator']."</td></tr>";
+                        echo "<td style='background-color:#ddd; color:black; text-align:center;'>";
+                        if (!empty($row4='area')){
+                            echo "<img src='../profilepics/".$row4['image']."' width='200' height='200'><br>".$row2['Post_Creator']."</td></tr>";
+                        }else{
+                            echo "<td style='background-color:#ddd; color:black; text-align:center;'><i class='fas fa-user fa-5x fa-border' style='padding-bottom:5px; color:#EA5555;'></i><br>".$row2['Post_Creator']."</td></tr>";
+                        }
+                        
                     }
                     echo "<tr><td colspan='2' style='background-color:#EA5555; text-align:center;'><a href='post_reply.php?cid=".$cid."&tid=".$tid."'>Reply</a></td></tr></table>";
                     
