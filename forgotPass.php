@@ -10,7 +10,7 @@
 
         if ($userid == $row['Stud_ID']){
             $email = $row['Stud_ID']."@student.mmu.edu.my";
-            $url = "changePassword.php?ID=".$userid;
+            $url = "https://mms-fyp.herokuapp.com/changePassword.php?ID=".$userid;
             $output = "Here is your password reset link! <a href='".$url."'>Click here</a>";
             $mail = new PHPMailer;
             //$mail->SMTPDebug = 3;                               // Enable verbose debug output
