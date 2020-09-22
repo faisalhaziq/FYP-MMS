@@ -106,7 +106,7 @@ include('includes/navbar.php');
 
               <h4>
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from student";
                 $res = mysqli_query($con,$sql);
 
