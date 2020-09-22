@@ -36,7 +36,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
         <?php 
-          $con = mysqli_connect("localhost","root","","fyp");
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $sql = "SELECT App_ID, Stud_ID, Stud_Name, Sub_Name, CGPA, `path` FROM mentorapp WHERE 1";
           $res = mysqli_query($con, $sql);
           if(mysqli_num_rows($res)==0){

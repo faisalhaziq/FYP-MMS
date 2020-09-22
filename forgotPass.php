@@ -1,9 +1,7 @@
 <?php
 	include 'checking.php';
     require ('PHPMailer/PHPMailerAutoload.php');
-    $con = mysqli_connect('localhost', 'root', '');
-    mysqli_select_db($con, 'fyp');
-
+    $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
     if (isset($_POST['forget'])){
         $userid = $_POST['userid'];
         $sql = "SELECT * FROM student where Stud_ID = '$userid'";
@@ -12,7 +10,7 @@
 
         if ($userid == $row['Stud_ID']){
             $email = $row['Stud_ID']."@student.mmu.edu.my";
-            $url = "localhost/MMS/changePassword.php?ID=".$userid;
+            $url = "changePassword.php?ID=".$userid;
             $output = "Here is your password reset link! <a href='".$url."'>Click here</a>";
             $mail = new PHPMailer;
             //$mail->SMTPDebug = 3;                               // Enable verbose debug output

@@ -5,7 +5,7 @@
     echo '<script language="javascript">alert("Please login to view this page!"); window.location.href="login.php";</script>';
     }
     
-    $con = NEW MySQLi('localhost', 'root', '','fyp');
+    $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
     $resultSet = $con->query("SELECT Sub_ID, Sub_Name FROM subject");
 ?>
 <!DOCTYPE html>

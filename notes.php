@@ -44,8 +44,7 @@
         </div>
         <div class="tableContainer">
         <?php
-            $con = mysqli_connect('localhost', 'root', '');
-            mysqli_select_db($con, 'fyp');
+            $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
             $s = "SELECT * FROM `subject` WHERE 1 ORDER BY Sub_Name ASC";
             $result = mysqli_query($con, $s);
             echo "<table class='userTable' style='width:800px;'>";

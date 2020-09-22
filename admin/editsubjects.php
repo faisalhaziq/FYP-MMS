@@ -21,8 +21,7 @@ include('includes/navbar.php');
       <h5 class="m-0 font-weight-bold text-danger">Edit Subject</h5>
       <div class="card-body">
       <?php
-        $con = mysqli_connect('localhost', 'root', '');
-        mysqli_select_db($con, 'fyp');
+        $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
         if(isset($_POST['edit'])){
           $ID = $_POST['id'];
           $sql = "SELECT * FROM subject where ID='$ID'";

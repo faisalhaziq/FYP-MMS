@@ -40,8 +40,7 @@ include('includes/navbar.php');
         <tbody>
      
          <?php
-          $con = mysqli_connect('localhost', 'root', '');
-          mysqli_select_db($con, 'fyp');
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT Mentor_ID, Mentor_Name, Sub_Name, Mentee_Name FROM `mentor` ORDER BY Mentor_Name ASC";
           $result = mysqli_query($con, $s);
           if(mysqli_num_rows($result)==0){

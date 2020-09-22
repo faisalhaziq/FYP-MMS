@@ -25,7 +25,7 @@ include('includes/navbar.php');
                 <label>Subject #</label>
                 <select class="form-control" name='id'>
           <?php
-            $con = NEW MySQLi('localhost', 'root', '','fyp');
+            $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
             $resultSet = $con->query("SELECT ID, Sub_Name FROM subject");
             while($rows = $resultSet->fetch_assoc())
             {
@@ -102,8 +102,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
         <?php
-          $con = mysqli_connect('localhost', 'root', '');
-          mysqli_select_db($con, 'fyp');
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT * FROM `subject` WHERE 1";
           $result = mysqli_query($con, $s);
           if(mysqli_num_rows($result)==0){

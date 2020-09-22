@@ -5,8 +5,7 @@
     }else{
         echo '<script language="javascript">alert("Please login to view this page!"); window.location.href="login.php";</script>';
     }
-    $con = mysqli_connect('localhost', 'root', '');
-            mysqli_select_db($con, 'fyp');
+    $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
 
 
 	$userid = $_POST['userid'];

@@ -39,8 +39,7 @@ include('includes/navbar.php');
         <tbody>
      
          <?php
-          $con = mysqli_connect('localhost', 'root', '');
-          mysqli_select_db($con, 'fyp');
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT Stud_ID, Stud_Name, Stud_Status FROM `student` WHERE 1 ORDER BY Stud_Name ASC";
           $result = mysqli_query($con, $s);
          while($row=mysqli_fetch_assoc($result))

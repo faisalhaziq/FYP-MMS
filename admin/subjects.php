@@ -101,8 +101,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
         <?php
-          $con = mysqli_connect('localhost', 'root', '');
-          mysqli_select_db($con, 'fyp');
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT * FROM subject";
           $result = mysqli_query($con, $s);
           if(mysqli_num_rows($result)==0){
@@ -170,8 +169,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
         <?php 
-          $con = mysqli_connect("localhost","root","","fyp");
-          $sql = "SELECT Sub_ID, Sub_Name from notes";
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $res = mysqli_query($con, $sql);
           if(mysqli_num_rows($res)==0){
             echo "<tr>";

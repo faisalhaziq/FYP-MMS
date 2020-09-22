@@ -1,6 +1,5 @@
 <?php 
-	$con = mysqli_connect('localhost', 'root', '');
-	mysqli_select_db($con, 'fyp');
+	$con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
 
 	if(isset($_POST['Accept'])){
 		$studID = $_GET['ID'];

@@ -1,7 +1,6 @@
 <?php
 	include 'checking.php';
-    $con = mysqli_connect('localhost', 'root', '');
-    mysqli_select_db($con, 'fyp');
+    $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
     if(isset($_GET['ID']) && $_GET['ID'] !== NULL){
         $userid = $_GET['ID'];
     }else{

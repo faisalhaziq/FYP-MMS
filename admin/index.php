@@ -44,7 +44,7 @@ include('includes/navbar.php');
 
                <h4>
                <?php
-                $con = mysqli_connect("localhost","root","","fyp");
+                $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from admin";
                 $res = mysqli_query($con,$sql);
 
@@ -74,7 +74,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from mentor";
                 $res = mysqli_query($con,$sql);
 
@@ -138,7 +138,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from subject";
                 $res = mysqli_query($con,$sql);
 
@@ -170,7 +170,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from forum_category";
                 $res = mysqli_query($con,$sql);
 
@@ -202,7 +202,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(ID) as total from student WHERE Mentor_Name != 'NULL'";
                 $res = mysqli_query($con,$sql);
 
@@ -238,7 +238,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+              $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(App_ID) as total from mentorapp";
                 $res = mysqli_query($con,$sql);
 
@@ -274,7 +274,7 @@ include('includes/navbar.php');
 
               <h4> 
               <?php
-              $con = mysqli_connect("localhost","root","","fyp");
+             $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
                 $sql = "SELECT COUNT(App_ID) as total from mentorshipapp";
                 $res = mysqli_query($con,$sql);
 

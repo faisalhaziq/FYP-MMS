@@ -92,8 +92,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
         <?php
-          $con = mysqli_connect('localhost', 'root', '');
-          mysqli_select_db($con, 'fyp');
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT * FROM `forum_category` WHERE 1";
           $result = mysqli_query($con, $s);
           if(mysqli_num_rows($result)==0){
