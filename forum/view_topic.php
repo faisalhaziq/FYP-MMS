@@ -83,11 +83,10 @@
                         $sql3 = "SELECT * from student WHERE Stud_ID = '".$row2['Post_Creator']."'";
                         $res3 = mysqli_query($con, $sql3);
                         $row4 = mysqli_fetch_array($res3);
-                        echo "<td style='background-color:#ddd; color:black; text-align:center;'>";
                         if (!empty($row4['image'])){
-                            echo "<img src='../profilepics/".$row4['image']."' width='100' height='100'><br>".$row2['Post_Creator']."</td></tr>";
+                            echo "<td style='background-color:#ddd; color:black; text-align:center; width:200px;'>"; echo "<img src='../profilepics/".$row4['image']."' width='150' height='150'><br>".$row2['Post_Creator']."</td></tr>";
                         }else{
-                            echo "<i class='fas fa-user fa-5x fa-border' style='padding-bottom:5px; color:#EA5555;'></i><br>".$row2['Post_Creator']."</td></tr>";
+                            echo "<td style='background-color:#ddd; color:black; text-align:center; padding-right:0;padding-left:0; width:200px;' >"; echo "<i class='fas fa-user fa-5x fa-border' style='padding-bottom:5px; color:#EA5555;'></i><br>".$row2['Post_Creator']."</td></tr>";
                         }
                         
                     }
