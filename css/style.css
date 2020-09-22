@@ -161,7 +161,7 @@ nav ul li a:hover::after{
 	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	}
 }
 @media screen and (max-width: 700px){
@@ -258,14 +258,14 @@ overflow: hidden;
 display: inline-block;
 transition: .5s;
 }
-@media screen and (max-width:1900px){
+@media screen and (max-width:1200px){
 	.card-container{
 	width: 350px;
 	height: 500px;
 	background: #FFF;
 	border-radius: 6px;
 	position: absolute;
-	margin-top:100px;
+	margin-top:200px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
