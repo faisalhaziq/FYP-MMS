@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/forumhome.css">
 </head>
 <body>
-<header style="height:150vh;">
+<header>
         <div class="menu-toggle" id="hamburger">
             <i class="fas fa-bars"></i>
         </div>
