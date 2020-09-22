@@ -258,7 +258,7 @@ overflow: hidden;
 display: inline-block;
 transition: .5s;
 }
-@media screen and (max-width:1500px){
+@media screen and (max-width:1700px){
 	.card-container{
 	width: 350px;
 	height: 500px;
