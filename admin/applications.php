@@ -109,7 +109,7 @@ include('includes/navbar.php');
         </thead>
         <tbody>
      <?php 
-          $con = mysqli_connect("localhost","root","","fyp");
+          $con = NEW MySQLi('remotemysql.com', 'TyBWPKoHqN', 'zoxpqL6tTl','TyBWPKoHqN');
           $s = "SELECT App_ID, Stud_Name, Stud_ID, Sub_Name, Mentor_Name FROM `mentorshipapp` WHERE 1";
           $res = mysqli_query($con, $s);
           if(mysqli_num_rows($res)==0){
