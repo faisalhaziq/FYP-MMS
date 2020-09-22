@@ -46,7 +46,7 @@
             </nav>
         </div>
 
-        <div class="tableContainer">
+        <div class="tableContainer" style="height:150vh;">
         <?php
             echo "<table class='userTable' style='height:600px;'>";
             echo "<tr>";

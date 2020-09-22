@@ -42,7 +42,7 @@
             <button class='about' onclick='aboutus()'>About Us</button>
             </div>
         
-        <div class="card-container" id="card1">
+        <div class="card-container" id="card1" style="margin-top:200px;">
              <div class="upper-container">
                 <img src="images\a_faisal.png" style="width: 100%; height: 100%;"/>
              </div>
@@ -61,7 +61,7 @@
         </div>
 
         
-        <div class="card-container" id="card2" style="margin-left:-400px;">
+        <div class="card-container" id="card2" style="margin-left:-400px; margin-top:200px;">
              <div class="upper-container">
                   <img src="images\a_amin.png" style="width: 100%; height: 100%;"/>
              </div>
@@ -79,7 +79,7 @@
              </div>
         </div>
 
-        <div class="card-container" id="card3" style="margin-left:400px;">
+        <div class="card-container" id="card3" style="margin-left:400px; margin-top:200px;">
              <div class="upper-container">
                 <img src="images\a_zaref.png" style="width: 100%; height: 100%;" />
              </div>
