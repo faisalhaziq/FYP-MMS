@@ -83,8 +83,8 @@
                         $sql3 = "SELECT * from student WHERE Stud_ID = '".$row['Post_Creator']."'";
                         $row4 = mysqli_fetch_assoc($sql3);
                         echo "<td style='background-color:#ddd; color:black; text-align:center;'>";
-                        if (!empty($row4='area')){
-                            echo "<img src='../profilepics/".$row4['image']."' width='200' height='200'><br>".$row2['Post_Creator']."</td></tr>";
+                        if (!empty($row4['image'])){
+                            echo "<img src='../profilepics/".$row4['image']."' width='100' height='100'><br>".$row2['Post_Creator']."</td></tr>";
                         }else{
                             echo "<td style='background-color:#ddd; color:black; text-align:center;'><i class='fas fa-user fa-5x fa-border' style='padding-bottom:5px; color:#EA5555;'></i><br>".$row2['Post_Creator']."</td></tr>";
                         }
