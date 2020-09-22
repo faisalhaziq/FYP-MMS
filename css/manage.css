@@ -1,0 +1,201 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: FuturaLight;
+}
+
+@font-face{
+	font-family: FuturaHeavy;
+	src: url(../fonts/FuturaHeavy.ttf);
+}
+@font-face{
+	font-family: FuturaLight;
+	src: url(../fonts/FuturaLight.ttf);
+}
+body{
+  padding-bottom:100px;
+  overflow-y:auto;
+}
+.logo{
+  width:100%px;
+  height:130px;
+  margin-left:auto;
+  margin-right:auto;
+  cursor:pointer;
+  display:block;
+}
+.bg{
+  width:100%;
+  height: 100vh;
+  background: white;
+  background-size:cover;
+  background-position:center;
+  position: relative;
+  overflow: hidden;
+}
+/* TABLE STUFF */
+.tableContainer{
+  padding-top:30px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+#tableTitle{
+  font-size:20pt;
+  text-decoration: underline;
+  padding-bottom:30px;
+}
+.userTable{
+  width:1300px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  padding-left:50px;
+  padding-right:50px;
+  border-collapse:collapse;
+}
+#name{
+  text-align:left;
+}
+.userTable th{
+  font-size:16pt;
+}
+.userTable td{
+  font-size:14pt;
+  border:1px solid black;
+  padding:10px;
+}
+/*form stuff */
+.formContainer{
+  display:block;
+  text-align:center;
+}
+form{
+  padding-top:20px;
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  font-size:18pt;
+}
+label{
+  font-weight: bold;
+}
+.selector{
+  width: 100%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size:12pt;
+}
+.form{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size:11pt;
+}
+#btn{
+  text-align:center;
+}
+button{
+  outline:none;
+}
+#editbtn{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size:14pt;
+  font-weight: bold;
+  border-radius:10px;
+  border:none;
+}
+#editbtn:hover{
+  cursor:pointer;
+  background-color:#FFBD33;
+  border:none;
+}
+#subbtn{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size:14pt;
+  font-weight: bold;
+  border-radius:10px;
+  border:none;
+}
+#subbtn:hover{
+  cursor:pointer;
+  background-color:#33FF57;
+  border:none;
+}
+#delbtn{
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size:14pt;
+  font-weight: bold;
+  border-radius:10px;
+  border:none;
+}
+#delbtn:hover{
+  cursor:pointer;
+  background-color:#FF3333;
+  border:none;
+}
+#response{
+  color:red;
+  font-size:30pt;
+}
+
+/* Menu Buttons */
+.menu{
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    background: linear-gradient(90deg, rgba(179,47,47,1) 0%, rgba(255,59,0,1) 60%);
+    position: relative;
+    padding: 14px 90px;
+    width: 100%;
+    color:white;
+    margin:5px;
+}
+.menuTable{
+  margin:auto;
+  margin-top:150px;
+}
+hr{
+  margin-right: 385px;
+  margin-left:385px;
+  border: 1px solid black;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height:30px;
+  width: 100%;
+  background-color: #EA5555;
+  color: white;
+  text-align: center;
+  padding-top:10px;
+}
+.requestForm{
+  width:400px;
+  height:250px;
+  position: relative;
+  margin:6% auto;
+  margin-top:50px;
+  background: #fff;
+  padding:5px;
+  border-radius:20px;
+}
+.request{
+  padding-top:20px;
+  margin-left:50px;
+  margin-right:auto;
+  position:absolute;
+  width:280px;
+  transition:.5s;
+}

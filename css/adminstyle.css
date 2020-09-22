@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: FuturaLight;
+}
+@font-face{
+	font-family: FuturaHeavy;
+	src: url(../fonts/FuturaHeavy.ttf);
+}
+@font-face{
+	font-family: FuturaLight;
+	src: url(../fonts/FuturaLight.ttf);
+}
+.logo{
+  width:100%px;
+  height:130px;
+  margin-left:auto;
+  margin-right:auto;
+  cursor:pointer;
+  display: block;
+}
+hr{
+  margin-right: 385px;
+  margin-left:385px;
+  border: 1px solid black;
+}
+.form{
+	width:380px;
+	height:480px;
+	position: relative;
+	margin:6% auto;
+	margin-top:50px;
+	background: #fff;
+	padding:5px;
+	border-radius:20px;
+	overflow:hidden;
+}
+.buttons{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #b32f2f;
+	border-radius: 30px;
+	text-align: center;
+}
+.toggle-btn{
+	font-family:FuturaLight;
+	padding: 10px 30px;
+	background: transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	color:white;
+}
+.txt{
+	font-family:FuturaLight;
+	padding-top: 10px;
+	text-align:center;
+}
+#btn{
+	top:0;
+	left:0;
+	position: absolute;
+	width: 220px;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(179,47,47,1) 0%, rgba(255,59,0,1) 60%);
+	border-radius: 30px;
+}
+.input{
+	padding-top:50px;
+	top:180px;
+	position:absolute;
+	width:280px;
+	margin-top:30px;
+}
+.input_fld{
+	font-family:FuturaHeavy;
+	width:100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right:0;
+	border-top:0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.submit_btn{
+	font-family:FuturaLight;
+	width:85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 20px auto;
+	background: linear-gradient(90deg, rgba(179,47,47,1) 0%, rgba(255,59,0,1) 60%);
+	outline: none;
+	border:0;
+	border-radius: 5px;
+	color:white;
+}
+#login{
+	left:50px;
+}
+#reg{
+	left:450px;
+}
+.imgcontainer 
+{
+  margin:auto;
+  position: relative;
+  margin-bottom:20px;
+}
+.Hat 
+{
+  width: 20%;
+  height: 15%;
+  border-radius: 50%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height:30px;
+  width: 100%;
+  background-color: #EA5555;
+  color: white;
+  text-align: center;
+  padding-top:10px;
+}
