@@ -82,7 +82,7 @@
                     <div class="accordion__content">
                         <p><b>Click the Notes Tab, find the subject you're looking for, and click Download!</b></p>
                         <hr>
-                        <img src="images/help/Notes.png" width="660">
+                        <img src="images/Help/Notes.png" width="660">
                         <hr>
                         &bull; If the subject you're looking for isn't listed, you can request the subject through the Request Notes form.
 
@@ -94,7 +94,7 @@
                     <div class="accordion__content">
                         <p><b>Go to your Profile page, then in the Revert Form, confirm that you want to revert back to Mentee, and submit!</b></p>
                         <hr>
-                        <img src="images/help/Revert.png" width="660">
+                        <img src="images/Help/Revert.png" width="660">
                         <hr>
                         &bull; Once you revert back to Mentee, you have to reapply to regain your Mentor status.
                     </div>
